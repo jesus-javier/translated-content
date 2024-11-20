@@ -7,7 +7,7 @@ slug: Web/API/Element/getElementsByTagName
 
 ## Resumen
 
-Devuelve una lista de elementos que tienen un [tag name](/es/DOM/element.tagName) determinado. Se explora el árbol por debajo del elemento dado, excluyendo el propio elemento.
+Devuelve una lista viva de elementos `HTMLCollection` que tienen un [tag name](/es/DOM/element.tagName) determinado. Se explora el árbol por debajo del elemento dado, excluyendo el propio elemento.
 
 ## Sintaxis
 
@@ -15,7 +15,7 @@ Devuelve una lista de elementos que tienen un [tag name](/es/DOM/element.tagName
 elements = element.getElementsByTagName(tagName);
 ```
 
-- `elements` es un `NodeList` del elemento encontrado en el orden en que aparece en el árbol.
+- `elements` es una lista viva `HTMLCollection` del elemento encontrado en el orden en que aparece en el árbol.
 - `element` es el elemento a partir del cual debe empezar la búsqueda. Recuerda que sólo se buscan los elementos descendentes del elemento dado, sin incluir el propio elemento.
 - `tagName` es el nombre que se busca. La cadena especial `"*"` representa todos los elementos.
 
